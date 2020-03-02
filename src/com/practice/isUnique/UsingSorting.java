@@ -1,5 +1,6 @@
 package com.practice.isUnique;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class UsingSorting {
@@ -17,6 +18,7 @@ public class UsingSorting {
 
 	private static Boolean isUnique(String s) {
 		char[] arr = s.toCharArray();
+		Arrays.sort(arr);
 		for (int i = 0; i < arr.length-1; i++) {
 				if(arr[i]==arr[i+1]) {
 					return false;
